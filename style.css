@@ -38,9 +38,24 @@ nav {
     font-size: 17px;
 }
 
+/* --- Hero section --- */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 80px;
+}
+
 .image {
     width: 650px;
     height: 873.44px;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 .content {
@@ -52,8 +67,7 @@ nav {
     font-weight: 400;
     color: #fff;
     line-height: 88px;
-    margin-top: 300px;
-    margin-bottom: 80px;
+    margin-bottom: 80px; /* убрал margin-top: 300px */
 }
 
 .content h2 span {
@@ -68,10 +82,17 @@ nav {
 
 .platforms {
     margin-top: 20px;
+    display: flex;
+    gap: 15px;
 }
 
 .icons {
     width: 32px;
     height: 32px;
-    margin: 15px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.icons:hover {
+    transform: scale(1.1);
 }
