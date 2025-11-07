@@ -1,41 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Podcast Landing Page</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Podcast Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="logo.svg" alt="logo image">
-            </div>
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Episodes</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- HEADER -->
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="logo.svg" alt="logo image" />
+      </div>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Episodes</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section class="hero">
-        <div class="image">
-            <img src="Frame.svg" alt="main image">
-        </div>
-        <div class="content">
-            <h2>Take your <br> podcast to the <span>next <b>level</b></span></h2>
-            <p>Listen on</p>
-            <div class="platforms">
-                <img class="icons" src="Image1.svg" alt="musical platforms">
-                <img class="icons" src="Image2.svg" alt="musical platforms">
-                <img class="icons" src="Image3.svg" alt="musical platforms">
-                <img class="icons" src="Image4.svg" alt="musical platforms">
-                <img class="icons" src="Image5.svg" alt="musical platforms">
-            </div>
-        </div>
-    </section>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="image">
+      <img src="Frame.svg" alt="main image" />
+    </div>
+    <div class="content">
+      <h2>Take your <br /> podcast to the <span>next <b>level</b></span></h2>
+      <p>Listen on</p>
+      <div class="platforms">
+        <img class="icons" src="Image1.svg" alt="musical platforms" />
+        <img class="icons" src="Image2.svg" alt="musical platforms" />
+        <img class="icons" src="Image3.svg" alt="musical platforms" />
+        <img class="icons" src="Image4.svg" alt="musical platforms" />
+        <img class="icons" src="Image5.svg" alt="musical platforms" />
+      </div>
+    </div>
+  </section>
+
+  <!-- LATEST EPISODES SECTION -->
+  <section class="episodes">
+    <div class="episodes-header">
+      <h2>Latest episodes</h2>
+      <button class="btn-view">View all episodes</button>
+    </div>
+
+    <div class="episode-card">
+      <img src="episode1.jpg" alt="Audio gear" />
+      <div class="episode-info">
+        <span class="tag">Gear</span>
+        <p class="ep-number">Episode 3</p>
+        <h3>Should you get outboard audio gear?</h3>
+        <p class="ep-desc">
+          Is hardware really worth it when it comes to podcasting? The answer
+          is… it depends. Here’s our reasons on why you might want to consider
+          picking something up.
+        </p>
+        <button class="btn-details">View Episode Details</button>
+      </div>
+    </div>
+
+    <div class="episode-card">
+      <img src="episode2.jpg" alt="Microphone" />
+      <div class="episode-info">
+        <span class="tag">Tips & Tricks</span>
+        <p class="ep-number">Episode 2</p>
+        <h3>Mic tricks to take you to the next level</h3>
+        <p class="ep-desc">
+          Stop rolling with those default settings on your mic. These small
+          tweaks will take you from sounding good to great.
+        </p>
+        <button class="btn-details">View Episode Details</button>
+      </div>
+    </div>
+
+    <div class="episode-card">
+      <img src="episode3.jpg" alt="The best microphone" />
+      <div class="episode-info">
+        <span class="tag">Gear</span>
+        <p class="ep-number">Episode 1</p>
+        <h3>The best microphone under $200</h3>
+        <p class="ep-desc">
+          With so many microphones on the market, how are you supposed to know
+          what’s the best? Take a look at our top picks.
+        </p>
+        <button class="btn-details">View Episode Details</button>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
