@@ -1,290 +1,174 @@
 body {
+  font-family: Arial, sans-serif;
+  background: #0b0b0b;
+  color: white;
   margin: 0;
-  font-family: "Inter", sans-serif;
-  background: #000;
-  color: #fff;
+  padding: 0;
 }
 
-/* HEADER */
+/* ===== HEADER ===== */
 header {
-  padding: 30px 60px;
+  background: #111;
+  padding: 20px 40px;
 }
-
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .menu {
   list-style: none;
   display: flex;
-  gap: 40px;
+  gap: 20px;
 }
-
-.menu a {
-  color: #fff;
+.menu li a {
+  color: white;
   text-decoration: none;
   font-weight: 500;
 }
+.menu li a:hover {
+  color: #0ef;
+}
 
-/* HERO SECTION */
+/* ===== HERO ===== */
 .hero {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 80px 60px;
-  gap: 50px;
+  justify-content: space-around;
+  padding: 60px;
+  flex-wrap: wrap;
 }
-
-.hero img {
+.hero .content {
   max-width: 500px;
 }
-
-.hero .content h2 {
-  font-size: 56px;
+.hero h2 {
+  font-size: 48px;
   line-height: 1.2;
 }
-
 .hero span {
-  color: #118da8;
+  color: #0ef;
+}
+.hero .icons {
+  width: 40px;
+  margin: 8px;
 }
 
-.platforms {
+/* ===== HOST ===== */
+.host {
+  background: #111;
   display: flex;
-  gap: 15px;
-  margin-top: 15px;
-}
-
-/* EPISODES SECTION */
-.episodes {
-  background: #191919;
-  padding: 80px 60px;
-  border-radius: 20px 20px 0 0;
-  margin-top: 60px;
-}
-
-.episodes-header {
-  display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  margin-bottom: 40px;
+  padding: 80px 40px;
+  flex-wrap: wrap;
+}
+.host-text {
+  max-width: 400px;
+}
+.arrow-btn {
+  background: #0ef;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+}
+.host h2 {
+  font-size: 32px;
+  margin-top: 10px;
+}
+.host p {
+  color: #aaa;
 }
 
-.episodes-header h2 {
+/* ===== SUBSCRIBE ===== */
+.subscribe {
+  background: #0e0e0e;
+  padding: 60px 40px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 20px;
+}
+.subscribe-text {
+  max-width: 400px;
+}
+.subscribe h2 {
   font-size: 36px;
 }
-
-.btn-view {
-  background: #118da8;
-  border: none;
-  color: #fff;
-  padding: 12px 20px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.episode-card {
-  display: flex;
-  align-items: center;
-  background: #000;
-  border-radius: 20px;
-  margin-bottom: 40px;
-  overflow: hidden;
-  gap: 40px;
-  padding: 20px;
-}
-
-.episode-card img {
-  width: 389px;
-  height: 432px;
-  object-fit: cover;
-  border-radius: 16px;
-}
-
-.episode-info {
-  max-width: 600px;
-}
-
-.tag {
-  background: #191919;
-  color: #b3b3b3;
-  padding: 6px 14px;
-  border-radius: 6px;
-  font-size: 14px;
-}
-
-.ep-number {
-  color: #118da8;
-  font-weight: 500;
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
-
-.episode-info h3 {
-  font-size: 28px;
-  margin: 10px 0;
-}
-
-.ep-desc {
-  color: #bdbdbd;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.btn-details {
-  margin-top: 15px;
-  background: #118da8;
-  border: none;
-  padding: 10px 18px;
-  border-radius: 8px;
-  color: #fff;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.btn-details:hover {
-  background: #0c738a;
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .episode-card {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .episode-card img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-.host {
-  background: #000;
-  padding: 100px 60px;
-}
-
-.host-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 60px;
-}
-
-.host-text {
-  max-width: 500px;
-}
-
-.host-text .arrow {
-  color: #118da8;
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.host-text .small-text {
-  color: #118da8;
-  font-size: 14px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.host-text h2 {
-  font-size: 42px;
-  margin: 10px 0 20px;
-}
-
-.host-text p {
-  color: #b3b3b3;
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 10px;
-}
-
-.host-image img {
-  width: 650px;
-  height: 743px;
-  border-radius: 16px;
-  object-fit: cover;
-}
-
-/* SUBSCRIBE SECTION */
-.subscribe {
-  background: #191919;
-  margin: 60px;
-  padding: 60px;
-  border-radius: 16px;
-}
-
-.subscribe-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 50px;
-}
-
-.subscribe-text .small-text {
-  color: #118da8;
-  text-transform: uppercase;
-  font-size: 14px;
-  letter-spacing: 1px;
-}
-
-.subscribe-text h2 {
-  font-size: 48px;
-  margin-top: 10px;
-}
-
 .subscribe-form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  min-width: 300px;
+  gap: 10px;
 }
-
-.subscribe-form input {
-  padding: 14px;
-  border-radius: 8px;
+.subscribe input {
+  padding: 10px;
+  border-radius: 6px;
   border: none;
-  outline: none;
-  font-size: 16px;
-  background: #000;
-  color: #fff;
 }
-
-.subscribe-form button {
-  background: #118da8;
-  color: #fff;
+.subscribe button {
+  background: #0ef;
+  color: white;
   border: none;
-  border-radius: 8px;
-  padding: 14px;
+  padding: 10px;
+  border-radius: 6px;
   cursor: pointer;
+}
+
+/* ===== TESTIMONIALS ===== */
+.testimonials {
+  background: #111;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 60px;
+}
+.card {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 15px;
+}
+.card .stars {
+  color: gold;
+  margin-bottom: 10px;
+}
+.card p {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+.card span {
+  color: #999;
+  font-size: 14px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #111;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+.footer-left h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.socials svg {
+  width: 24px;
+  fill: white;
+  margin-right: 10px;
   transition: 0.3s;
 }
-
-.subscribe-form button:hover {
-  background: #0c738a;
+.socials svg:hover {
+  fill: #0ef;
 }
-
-/* Responsive */
-@media (max-width: 900px) {
-  .host-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .subscribe-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .host-image img {
-    width: 100%;
-    height: auto;
-  }
+.footer-links a {
+  color: #bbb;
+  text-decoration: none;
+  margin-right: 20px;
+}
+.footer-links a:hover {
+  color: white;
 }
