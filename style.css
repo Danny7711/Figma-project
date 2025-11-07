@@ -143,32 +143,118 @@ nav {
   font-size: 14px;
 }
 
-/* ===== FOOTER ===== */
+/* ===== FOOTER SECTION ===== */
+
 footer {
-  background: #111;
+  background-color: #000;
+  color: #fff;
+  padding: 60px 10%;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer-content {
   display: flex;
   justify-content: space-between;
-  padding: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 40px;
+}
+
+.footer-left h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #fff;
+}
+
+.social-icons a:hover svg path,
+.social-icons a:hover svg rect,
+.social-icons a:hover svg circle {
+  stroke: #000;
+  fill: #000;
+}
+
+/* Links section */
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #1db954;
+}
+
+/* Right section */
+.footer-right .platforms {
+  display: flex;
+  gap: 16px;
+  align-items: center;
   flex-wrap: wrap;
 }
-.footer-left h2 {
-  font-size: 24px;
-  margin-bottom: 15px;
+
+.footer-right .platforms img {
+  width: 32px;
+  height: 32px;
+  opacity: 0.9;
+  transition: opacity 0.3s;
 }
-.socials svg {
-  width: 24px;
-  fill: white;
-  margin-right: 10px;
-  transition: 0.3s;
+
+.footer-right .platforms img:hover {
+  opacity: 1;
 }
-.socials svg:hover {
-  fill: #0ef;
+
+/* Bottom text */
+.footer-bottom {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
 }
-.footer-links a {
-  color: #bbb;
-  text-decoration: none;
-  margin-right: 20px;
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-links ul {
+    display: flex;
+    gap: 20px;
+  }
+
+  .footer-right .platforms {
+    justify-content: center;
+  }
 }
-.footer-links a:hover {
-  color: white;
-}
+
