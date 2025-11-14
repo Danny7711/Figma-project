@@ -6,7 +6,6 @@ body {
   padding: 0;
 }
 
-/* ===== HEADER ===== */
 header {
   background: #111;
   padding: 20px 40px;
@@ -30,7 +29,6 @@ nav {
   color: #0ef;
 }
 
-/* ===== HERO ===== */
 .hero {
   display: flex;
   align-items: center;
@@ -52,7 +50,7 @@ nav {
   width: 40px;
   margin: 8px;
 }
-/* ===== LATEST EPISODES SECTION ===== */
+
 .episodes {
   background-color: #121212;
   color: #fff;
@@ -87,7 +85,6 @@ nav {
   background-color: #0096c7;
 }
 
-/* Episode cards */
 .episode-card {
   display: flex;
   align-items: center;
@@ -148,7 +145,6 @@ nav {
   background-color: #0096c7;
 }
 
-/* Mobile Responsive */
 @media (max-width: 768px) {
   .episode-card {
     flex-direction: column;
@@ -164,7 +160,6 @@ nav {
   }
 }
 
-/* ===== HOST ===== */
 .host {
   background: #111;
   display: flex;
@@ -193,7 +188,6 @@ nav {
   color: #aaa;
 }
 
-/* ===== SUBSCRIBE ===== */
 .subscribe {
   background: #0e0e0e;
   padding: 60px 40px;
@@ -228,7 +222,6 @@ nav {
   cursor: pointer;
 }
 
-/* ===== TESTIMONIALS ===== */
 .testimonials {
   background: #111;
   display: grid;
@@ -254,7 +247,6 @@ nav {
   font-size: 14px;
 }
 
-/* ===== FOOTER SECTION ===== */
 
 footer {
   background-color: #000;
@@ -305,7 +297,7 @@ footer {
   fill: #000;
 }
 
-/* Links section */
+
 .footer-links ul {
   list-style: none;
   padding: 0;
@@ -325,7 +317,6 @@ footer {
   color: #1db954;
 }
 
-/* Right section */
 .footer-right .platforms {
   display: flex;
   gap: 16px;
@@ -344,7 +335,6 @@ footer {
   opacity: 1;
 }
 
-/* Bottom text */
 .footer-bottom {
   text-align: center;
   padding-top: 30px;
