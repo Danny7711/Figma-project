@@ -7,9 +7,10 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <!-- HEADER -->
   <header>
-    <nav>
+    <nav class="container">
       <div class="logo">
         <img src="logo.svg" alt="logo image" />
       </div>
@@ -22,31 +23,35 @@
     </nav>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <div class="image">
-      <img src="Frame.svg" alt="main image" />
-    </div>
-    <div class="content">
-      <h2>Take your <br /> podcast to the <span>next <b>level</b></span></h2>
-      <p>Listen on</p>
+  <!-- HERO -->
+  <section class="hero container">
+    <div class="hero-text">
+      <h1>Take your <br> podcast to the <span>next <b>level</b></span></h1>
+
+      <p class="listen">Listen on</p>
+
       <div class="platforms">
-        <img class="icons" src="Image1.svg" alt="musical platforms" />
-        <img class="icons" src="Image2.svg" alt="musical platforms" />
-        <img class="icons" src="Image3.svg" alt="musical platforms" />
-        <img class="icons" src="Image4.svg" alt="musical platforms" />
-        <img class="icons" src="Image5.svg" alt="musical platforms" />
+        <img src="Image1.svg" alt="Spotify" />
+        <img src="Image2.svg" alt="Apple" />
+        <img src="Image3.svg" alt="Google" />
+        <img src="Image4.svg" alt="Pocketcast" />
+        <img src="Image5.svg" alt="RSS" />
       </div>
+    </div>
+
+    <div class="hero-img">
+      <img src="Frame.svg" alt="podcast" />
     </div>
   </section>
 
-  <!-- LATEST EPISODES SECTION -->
-  <section class="episodes">
+  <!-- LATEST EPISODES -->
+  <section class="episodes container">
     <div class="episodes-header">
       <h2>Latest episodes</h2>
       <button class="btn-view">View all episodes</button>
     </div>
 
+    <!-- CARD 1 -->
     <div class="episode-card">
       <img src="fr1.png" alt="Audio gear" />
       <div class="episode-info">
@@ -54,14 +59,14 @@
         <p class="ep-number">Episode 3</p>
         <h3>Should you get outboard audio gear?</h3>
         <p class="ep-desc">
-          Is hardware really worth it when it comes to podcasting? The answer
-          is… it depends. Here’s our reasons on why you might want to consider
-          picking something up.
+          Is hardware really worth it when it comes to podcasting? The answer is… it depends.
+          Here’s our reasons on why you might want to consider picking something up.
         </p>
         <button class="btn-details">View Episode Details</button>
       </div>
     </div>
 
+    <!-- CARD 2 -->
     <div class="episode-card">
       <img src="fr2.png" alt="Microphone" />
       <div class="episode-info">
@@ -76,6 +81,7 @@
       </div>
     </div>
 
+    <!-- CARD 3 -->
     <div class="episode-card">
       <img src="fr3.png" alt="The best microphone" />
       <div class="episode-info">
@@ -91,96 +97,65 @@
     </div>
   </section>
 
-  <section class="host">
-    <div class="host-content">
-      <div class="host-text">
-        <div class="arrow-btn">&#10148;</div>
-        <p class="small-text">Meet your host</p>
-        <h2>Jacob Paulaner</h2>
-        <p>
-          Jacob has a background in audio engineering, and has been podcasting
-          since the early days.
-        </p>
-        <p>
-          He’s here to help you level up your game by sharing everything he’s
-          learned along the way.
-        </p>
-      </div>
-      <div class="host-image">
-        <img src="headphones.png" alt="Jacob Paulaner" />
-      </div>
+  <!-- HOST -->
+  <section class="host container">
+    <div class="host-text">
+      <div class="arrow">→</div>
+      <p class="small-text">Meet your host</p>
+      <h2>Jacob Paulaner</h2>
+      <p>Jacob has a background in audio engineering, and has been podcasting since the early days.</p>
+      <p>He’s here to help you level up your game by sharing everything he’s learned along the way.</p>
+    </div>
+
+    <div class="host-img">
+      <img src="headphones.png" alt="Jacob Paulaner" />
     </div>
   </section>
 
- 
-  <section class="subscribe">
-    <div class="subscribe-content">
-      <div class="subscribe-text">
-        <p class="small-text">Email Newsletter</p>
-        <h2>Subscribe <br />for updates</h2>
-      </div>
-      <form class="subscribe-form">
-        <input type="text" placeholder="Name" required />
-        <input type="email" placeholder="Email" required />
-        <button type="submit">Submit</button>
-      </form>
+  <!-- SUBSCRIBE -->
+  <section class="subscribe container">
+    <div class="subscribe-text">
+      <p class="small-text">Email Newsletter</p>
+      <h2>Subscribe <br> for updates</h2>
     </div>
-</section>
-  <section class="testimonials">
-    <div class="card">
-      <p class="stars">★★★★★</p>
-      <p>I can’t recommend this podcast enough</p>
-      <span>Betty Lacey</span>
-    </div>
-    <div class="card">
-      <p class="stars">★★★★★</p>
-      <p>Jacob is the best in the business</p>
-      <span>Adam Driver</span>
-    </div>
-    <div class="card">
-      <p class="stars">★★★★★</p>
-      <p>A wealth of audio knowledge</p>
-      <span>Marcus Brown</span>
-    </div>
-    <div class="card">
-      <p class="stars">★★★★★</p>
-      <p>Every episode is a gem!</p>
-      <span>Jessica Knowl</span>
-    </div>
-    <div class="card">
-      <p class="stars">★★★★★</p>
-      <p>Whoa whoa, let me take some notes!</p>
-      <span>Scott Adams</span>
-    </div>
-    <div class="card">
-      <p class="stars">★★★★★</p>
-      <p>I’ve upped my game considerably since I started listening</p>
-      <span>Ellen Blast</span>
-    </div>
+
+    <form class="subscribe-form">
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <button type="submit">Submit</button>
+    </form>
   </section>
 
+  <!-- TESTIMONIALS -->
+  <section class="testimonials container">
+    <div class="card"><p class="stars">★★★★★</p><p>I can’t recommend this podcast enough</p><span>Betty Lacey</span></div>
+    <div class="card"><p class="stars">★★★★★</p><p>Jacob is the best in the business</p><span>Adam Driver</span></div>
+    <div class="card"><p class="stars">★★★★★</p><p>A wealth of audio knowledge</p><span>Marcus Brown</span></div>
+    <div class="card"><p class="stars">★★★★★</p><p>Every episode is a gem!</p><span>Jessica Knowl</span></div>
+    <div class="card"><p class="stars">★★★★★</p><p>Whoa whoa, let me take some notes!</p><span>Scott Adams</span></div>
+    <div class="card"><p class="stars">★★★★★</p><p>I’ve upped my game considerably since I started listening</p><span>Ellen Blast</span></div>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
-    <div class="footer-content">
+    <div class="footer-content container">
+
       <div class="footer-left">
         <h2>Castaway</h2>
         <div class="social-icons">
-          <a href="#" aria-label="Instagram">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <rect x="2" y="2" width="20" height="20" rx="5" stroke="white" stroke-width="2"/>
-              <circle cx="12" cy="12" r="4" stroke="white" stroke-width="2"/>
-              <circle cx="17.5" cy="6.5" r="1.5" fill="white"/>
-            </svg>
-          </a>
-          <a href="#" aria-label="Twitter">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
-              <path d="M8 19c7.5 0 11.6-6.2 11.6-11.6v-.5A8.3 8.3 0 0 0 22 4.5a8.1 8.1 0 0 1-2.3.6 4 4 0 0 0 1.8-2.2 8.2 8.2 0 0 1-2.6 1A4.1 4.1 0 0 0 12.8 6a11.5 11.5 0 0 1-8.4-4.3 4.1 4.1 0 0 0 1.3 5.5A4.1 4.1 0 0 1 3.5 6v.1a4.1 4.1 0 0 0 3.3 4 4 4 0 0 1-1.9.1 4.1 4.1 0 0 0 3.8 2.8A8.3 8.3 0 0 1 2 17.6a11.5 11.5 0 0 0 6 1.8"/>
-            </svg>
-          </a>
-          <a href="#" aria-label="Facebook">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
-              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-            </svg>
-          </a>
+          <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <rect x="2" y="2" width="20" height="20" rx="5" stroke="white" stroke-width="2"/>
+            <circle cx="12" cy="12" r="4" stroke="white" stroke-width="2"/>
+            <circle cx="17.5" cy="6.5" r="1.5" fill="white"/>
+          </svg></a>
+
+          <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+            <path d="M8 19c7.5 0 11.6-6.2 11.6-11.6v-.5A8.3 8.3 0 0 0 22 4.5a8.1 8.1 0 0 1-2.3.6 4 4 0 0 0 1.8-2.2 8.2 8.2 0 0 1-2.6 1A4.1 4.1 0 0 0 12.8 6a11.5 11.5 0 0 1-8.4-4.3 4.1 4.1 0 0 0 1.3 5.5A4.1 4.1 0 0 1 3.5 6v.1a4.1 4.1 0 0 0 3.3 4 4 4 0 0 1-1.9.1 4.1 4.1 0 0 0 3.8 2.8A8.3 8.3 0 0 1 2 17.6a11.5 11.5 0 0 0 6 1.8"/>
+          </svg></a>
+
+          <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+          </svg></a>
         </div>
       </div>
 
@@ -195,11 +170,11 @@
 
       <div class="footer-right">
         <div class="platforms">
-          <img src="Image1.svg" alt="Spotify" />
-          <img src="Image2.svg" alt="Apple Podcasts" />
-          <img src="Image3.svg" alt="Google Podcasts" />
-          <img src="Image4.svg" alt="Pocket Casts" />
-          <img src="Image5.svg" alt="RSS" />
+          <img src="Image1.svg" />
+          <img src="Image2.svg" />
+          <img src="Image3.svg" />
+          <img src="Image4.svg" />
+          <img src="Image5.svg" />
         </div>
       </div>
     </div>
@@ -208,3 +183,6 @@
       <p>© 2025 Castaway | Powered by Webflow</p>
     </div>
   </footer>
+
+</body>
+</html>
