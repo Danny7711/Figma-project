@@ -1,4 +1,4 @@
-
+/* RESET + BASE */
 * {
   margin: 0;
   padding: 0;
@@ -22,88 +22,66 @@ img {
   padding: 0 40px;
 }
 
-
+/* HEADER */
 header {
   background: #111;
-  padding: 40px 50px 10px 50px;
-
+  padding: 25px 0;
+  width: 100%;
 }
 
 nav {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-}
-
-.logo  {
-  width: 160px;
-  height: 33px;
+  align-items: center;
 }
 
 .menu {
   display: flex;
-  gap: 40px;
+  gap: 28px;
   list-style: none;
 }
 
 .menu li a {
   text-decoration: none;
   color: #fff;
-  font-weight: 400;
-  font-size: 17px;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .menu li a:hover {
   color: #0ef;
 }
 
+/* HERO */
 .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px;
+  padding: 80px 0;
   gap: 40px;
 }
-.image {
-  width: 650px;
-  height: 873.44px;
+
+.hero-text h1 {
+  font-size: 68px;
+  line-height: 1.1;
+  font-weight: 700;
 }
 
-
-.content {
- max-width: 500px;
+.hero-text span {
+  color: #0ef;
 }
 
-.content h2 {
-  font-size: 70px;
-  font-weight: 400;
-  color: white;
-  line-height: 88px;
-  margin-top: 300px;
-  margin-bottom:80px;
-}
-
-.content h2 span{
-  font-size: 75px;
-  font-weight: 400;
-}
-
-.content p {
-  font-size: 15px;
-  font-weight: 400;
+.listen {
+  margin-top: 25px;
+  color: #bbb;
+  font-size: 18px;
 }
 
 .platforms {
   display: flex;
   align-items: center;
   gap: 16px;
-  margin-top: 20px;
-}
-
-.icons {
-  width: 32px;
-  height: 32px;
-  margin-right: 15px;
+  margin-top: 15px;
 }
 
 /* EPISODES */
