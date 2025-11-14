@@ -1,4 +1,4 @@
-/* RESET + BASE */
+
 * {
   margin: 0;
   padding: 0;
@@ -22,17 +22,17 @@ img {
   padding: 0 40px;
 }
 
-/* HEADER */
+
 header {
   background: #111;
-  padding: 25px 0;
-  width: 100%;
+  padding: 40px 50px 10px 50px;
+
 }
 
 nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 .menu {
