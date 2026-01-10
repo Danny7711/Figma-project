@@ -188,18 +188,4 @@ margin-right: 15px;
     width: fit-content;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .episode-card {
-        flex-direction: column;
-    }
 
-    .episode-card img {
-        width: 100%;
-        height: 220px;
-    }
-
-    .episode-content h2 {
-        font-size: 22px;
-    }
-}
