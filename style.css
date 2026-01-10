@@ -50,34 +50,48 @@ font-size: 17px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 80px 0;
-  gap: 40px;
+  padding: 50px;
 }
 
-.hero-text h1 {
-  font-size: 68px;
-  line-height: 1.1;
-  font-weight: 700;
+.image{
+width: 650px;
+height: 873.44px;
 }
 
-.hero-text span {
-  color: #0ef;
+.content {
+  max-width: 500px;
 }
 
-.listen {
-  margin-top: 25px;
-  color: #bbb;
-  font-size: 18px;
+.content h2{
+font-size: 70px;
+font-weight: 400;
+color: white;
+line-height: 88px;
+margin-top: 300px;
+margin-bottom: 80px;
+}
+
+.content h2 span{
+  font-size: 75px;
+  font-weight: 400;
+}
+
+.content p{
+  font-size: 15px;
+  font-weight: 400;
+  
 }
 
 .platforms {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-top: 15px;
+  margin-top: 20px
 }
 
-/* EPISODES */
+.icons {
+width: 32px;
+height: 32px;
+
+}
+
 .episodes {
   background: #121212;
   padding: 80px 0;
