@@ -255,6 +255,8 @@ margin-right: 15px;
 }
 
 .host-title {
+    white-space: nowrap;
+
     font-size: 65px;
     font-weight: 400;
     margin-bottom: 25px;
