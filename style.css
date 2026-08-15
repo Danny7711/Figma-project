@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +10,6 @@ body {
   line-height: 1.4;
   font-family: Arial, sans-serif;
 }
-
 
 /* HEADER */
 
@@ -47,7 +45,6 @@ nav {
 .menu a:hover {
   color: #0ef;
 }
-
 
 /* HERO */
 
@@ -102,7 +99,6 @@ nav {
   margin-right: 15px;
 }
 
-
 /* EPISODES */
 
 .episodes {
@@ -155,12 +151,13 @@ nav {
     #0f0f0f 100%
   );
   border-radius: 20px;
-  overflow: hidden;
   margin-bottom: 36px;
 }
 
 .episode-card img {
   width: 36%;
+  margin: 20px;
+  border-radius: 12px;
   object-fit: cover;
 }
 
@@ -197,7 +194,6 @@ nav {
   max-width: 520px;
   margin-bottom: 20px;
 }
-
 
 /* HOST */
 
@@ -264,7 +260,6 @@ nav {
   border-radius: 10px;
   object-fit: cover;
 }
-
 
 /* SUBSCRIBE */
 
@@ -345,7 +340,6 @@ nav {
   cursor: pointer;
 }
 
-
 /* REVIEWS */
 
 .reviews {
@@ -401,7 +395,6 @@ nav {
 
   margin-top: auto;
 }
-
 
 /* FOOTER */
 
@@ -477,7 +470,6 @@ nav {
   object-fit: contain;
 }
 
-
 /* ADAPTIVE */
 
 @media (max-width: 768px) {
@@ -527,8 +519,10 @@ nav {
   }
 
   .episode-card img {
-    width: 100%;
+    width: calc(100% - 40px);
     height: 220px;
+    margin: 20px;
+    border-radius: 12px;
   }
 
   .episode-content {
